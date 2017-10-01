@@ -2,7 +2,7 @@
 
 每个模块都有唯一的id，当出现相同Id的模块时，会触发模块更新，同时更新所有[下线模块]()
 
-为了有直观的认识，建议您亲自实践下。环境准备很简单。首先下载[hotload.js](),在同一目录下，打开记事本，贴下面的html，保存为test.html。
+为了有直观的认识，建议您亲自实践下。环境准备很简单。首先下载[hotload.js](https://github.com/duhongwei/hotloadjs/blob/master/lib/hotload.js),在同一目录下，打开记事本，贴下面的html，保存为test.html。
 
 ``` html
 <!DOCTYPE html>
