@@ -1,2 +1,2 @@
-# legojs-book
-a book for legojs
+# hotloadjs-book
+a book for hotloadjs
