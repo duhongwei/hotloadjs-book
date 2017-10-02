@@ -1,6 +1,6 @@
 # 调试
 
-代码的中的错误会抛异常，直接可以察觉到，但是如果是模块上线一直没有ready呢？这时模块的factory不会执行，也不会报错，出现这样的问题，不容易发现。这时就需要用到hotloadjs的调试功能了。
+代码的中的错误会抛异常，直接可以察觉到，但是如果是模块上线（所依赖的模块）一直没有ready呢？这时模块的factory不会执行，也不会报错，出现这样的问题，不容易发现。这时就需要用到hotloadjs的调试功能了。
 
 ``` js
 require('lego').inspect()
@@ -71,4 +71,3 @@ require('lego').inspect().readyMod['counter']
 	type:'define'   //模块类型，只能是dfine或require
 }
 ```
-

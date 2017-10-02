@@ -7,12 +7,14 @@
 	* [更新模块](hotload/update.md)
 	* [清理模块](hotload/unload.md)
 	* [状态保持](hotload/hold.md)
-	* [load,unload实现原理](hotload/program.md)
-* [调试]()
-* [加载文件]()
-* [第三方模块]()
-* [最佳实践]()
+* [调试](debug.md)
+* [加载文件](load.md)
+* [第三方模块](other.md)
 * [演练]()
 * [API文档]()
+
+----------
+* [作者：杜宏伟](https://www.gitbook.com/@duhongwei)
+* [授权：署名-非商用许可证](https://creativecommons.org/licenses/by-nc/4.0/)
 
 
