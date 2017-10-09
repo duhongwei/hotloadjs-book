@@ -1,7 +1,7 @@
 # hotloadjs-book
 a book for hotloadjs
 
-It has published at [https://www.gitbook.com/book/duhongwei/hotloadjs/details](https://www.gitbook.com/book/duhongwei/hotloadjs/details)
+It has been published at [https://www.gitbook.com/book/duhongwei/hotloadjs/details](https://www.gitbook.com/book/duhongwei/hotloadjs/details)
 
 ## LICENCE
 
