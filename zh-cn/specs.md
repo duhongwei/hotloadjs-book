@@ -1,6 +1,6 @@
 # 规范
 
-参照了[AMD]()规范，为了实现热替换，有所不同。
+参照了 [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md) 规范，为了实现热替换，有所不同。
 
 dfine,require定义的代码是模块。表面看来，define是定义模块，require是引用模块，实际上legojs把define,require都看成是更新（热替换）的最小代码单元，从更新代码的角度来看，没有区别；从使用的角度看，区别就是define的模块可以通过require得到，require的模块只能执行，不能被引用。
 
