@@ -1,15 +1,17 @@
 # 开始
 
-有一个问题不得不说，现在 webpeck 万能模块加载理念，即所有的资源都可以且也应该模块化,已经取代了requirejs的工作，现在做这个js模块管理器有人用吗？我觉得hotload的优势就是无需编译，轻量，完美的解决了热替换的问题。hotloadjs实现的热替换不光是用在开发环境，生产环境中也是一样的方便。 hotloadjs其实是一个前端解决方案,整体看更能发现她的优势，开发环境极度友好，设计简单，非常方便实现精细控制。不过目前只发布了hotload.js热替换这部分，这部分可以独立使用。为了现场体验热替换效果，可以实际[演练(编写中)](example.md)一下
+热替换，也有的叫热加载现在越来越多的应用到开发中。但是要支持热替换需要一大堆东西支持，相当于要跑飞机，得先搭飞机场。用 [hotload.js](https://github.com/duhongwei/hotloadjs) 就不一样了，uglify后只有5KB代码，没有任何依赖，在页面中引用后就能支持js模块热替换了。
 
-Hotloadjs把精力放在依赖处理和热替换上，不负责具体加载文件。因为具体项目的环境都不一样，开发者的习惯也不一样，实现通用的自动加载文件很复杂，也很难令所有人满意。相反的，如果对具体项目具体实现加载文件的功能会很简单。
+使用 [hotload.js](https://github.com/duhongwei/hotloadjs) 编写js模块后，模块就有了热替换的能力。服务器端文件变化时通过socket发到页面，页面重新加载变化的js文件（一个模块一个文件），文件加载后，hotloadjs [更新所有相关的模块](hotload/unload.md) ，并做 [清理](hotload/unload.md) 和 [状态保持](hotload/hold.md) 的工作， 就实现了模块的热替换。
 
-Hotloadjs 只用于浏览器环境，参照了ADM规范，详见 [规范](specs.md)
+Hotloadjs把精力放在依赖处理和热替换上，不负责具体加载文件。
+
+Hotloadjs 只用于浏览器环境，参照了ADM规范。
 
 hotloadjs 支持ie6+ 和现代浏览器
 
 Hotloadjs 规定：模块分为两个状态，waiting和ready。
 
-如果有什么问题可以在[holoadjs issue](https://github.com/duhongwei/hotloadjs/issues) 上提出。如果觉得有用，慷慨您的鼓励。
+如果有什么问题可以在[holoadjs issue](https://github.com/duhongwei/hotloadjs/issues) 上提出。
 
 接下来，会做更深入地探讨。无规矩不成方圆，首先从[规范](specs.md)说起
