@@ -10,14 +10,14 @@ hotloadjs对符合AMD规范的模块是兼容的。所以需要考虑的是不�
 
 ``` js
 (function(window){
-var apple='red apple';
+	var apple='red apple';
 
-function getApple(){
- return apple;
-}
+	function getApple(){
+ 		return apple;
+	}
 
-//对外的接口
-window.getApple=getApple
+	//对外的接口
+	window.getApple=getApple
 
 })(this)
 ```
