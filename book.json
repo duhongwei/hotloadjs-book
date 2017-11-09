@@ -1,10 +1,16 @@
 {
 	
-	"plugins": ["edit-link"],
+	"plugins": ["edit-link","github","baidu"],
 	"pluginsConfig": {
 		"edit-link": {
 			"base": "https://github.com/duhongwei/hotloadjs-book/edit/master",
 			"label": "Edit This Page"
+		},
+		"github": {
+			"url": "https://github.com/duhongwei/hotloadjs"
+		},
+		"baidu": {
+			"token": "c16c8b1dae7467f31fde7a947a320954"
 		}
 	},
 	"links": {

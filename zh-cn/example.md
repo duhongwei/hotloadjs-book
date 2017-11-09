@@ -24,7 +24,7 @@ hotloadjs init apple
 屏幕 输出
 
 ``` shell
-=== create project abc sucess ===
+=== create project apple sucess ===
 cd apple
 npm install
 npm start
