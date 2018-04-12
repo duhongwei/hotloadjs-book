@@ -1,6 +1,10 @@
 # hotloadjs
 hotloadjs 是一个支持热替换的的用于浏览器环境的js模块管理器。
 
+hotloadjs 已经集成到 [hotpack](https://github.com/duhongwei/hotpack) 中
+
+[hotpack](https://github.com/duhongwei/hotpack)  一个简单高效的网站开发编译工具
+
 ## 功能
 
 - 处理依赖
@@ -8,8 +12,5 @@ hotloadjs 是一个支持热替换的的用于浏览器环境的js模块管理�
 - 模块热替换后保持原来状态
 - 模块热替换后，所有直接或间接依赖它的模块自动更新
 
-## 特点
-
-没有任何依赖，代码uglify3KB多一点。支持ie6+和所有现代浏览器。无论开发环境还是生产环境，都支持热替换。
 
 

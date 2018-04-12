@@ -40,14 +40,13 @@
 
 为了让状态保持，需要用到`this.load,this.unload`
 
-
 ``` js
  //定义counter
   define('counter', function () {
       var count = 0;
       var btn = document.getElementById('js-btn');
 	  function clickHandler(){
-		    alert(count);
+		    alert(count++);
 	  }
       btn.addEventListener('click', clickHandler);
 	  this.load=function(presevedData){
@@ -65,3 +64,27 @@
 ```
 
 把状态保存后，无论counter更新多少次，count总能保持它的状态
+
+另一种写法
+
+``` js
+ //定义counter
+  define('counter', function () {
+      var count = 0;
+      var btn = document.getElementById('js-btn');
+	  var that=this
+	  if(!that.isHot){
+         btn.addEventListener('click', function clickHandler(){
+		    alert(count++);
+            //保存 count
+            that.data.count=count
+	     });
+      }
+      else{
+		 //恢复count
+         count=that.data.count
+      }
+	  
+  });
+ 
+```

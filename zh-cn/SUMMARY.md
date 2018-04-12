@@ -10,7 +10,6 @@
 * [调试](debug.md)
 * [加载文件](load.md)
 * [第三方模块](other.md)
-* [演练](example.md)
 * [API文档](api.md)
 
 ----------

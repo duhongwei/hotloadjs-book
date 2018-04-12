@@ -1,6 +1,6 @@
 # 模块更新
 
-每个模块都有唯一的id，当出现相同Id的模块时，会触发模块更新，同时更新所有[下线模块]()
+每个模块都有唯一的id，当出现相同Id的模块时，会触发模块更新，同时更新所有下线模块
 
 为了有直观的认识，建议您亲自实践下。环境准备很简单。首先下载[hotload.js](https://github.com/duhongwei/hotloadjs),在同一目录下，打开记事本，贴下面的html，保存为test.html。
 
@@ -9,7 +9,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>unload example</title>
+<title>hotloadjs upload example</title>
 <script src='hotload.js'></script>
 </head>
 <body>
@@ -83,7 +83,7 @@ define('man',['plate'],function(plate){
 console.log(require('plate').getPlate(),require('man').take());
 ```
 
-下面更新上线apple为 yellow apple,这会触发所有下线的更新
+更新上线apple为 yellow apple,这会触发所有下线的更新
 
 ``` js
 define('apple',function(){

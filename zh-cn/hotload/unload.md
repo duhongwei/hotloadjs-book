@@ -1,7 +1,7 @@
 # 清理模块
 
 
-当触发模块更新的时候，需要对旧模块做清理工作，否则会出现问题。比如有页面如下
+当触发模块更新的时候，需要对旧模块做清理工作，否则会出现问题。比如有如下页面
 
 ``` html
 <!DOCTYPE html>
@@ -62,3 +62,19 @@
 ```
 
 在Unload方法中清理了事件绑定后， 无论counter更新多少次，一切正常了
+
+另一种写法
+``` js
+ //避免重复绑定
+  define('counter', function () {
+      var btn = document.getElementById('js-btn');
+
+	  //只有首次加载才绑定事件
+	  if(!this.isHot){
+      	btn.addEventListener('click', function clickHandler(){
+		    alert('click');
+	  	});
+	  }
+  });
+ 
+```
