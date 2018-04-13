@@ -77,11 +77,13 @@ var lego=require('lego');
 	- 类型：String
 	- 需要加载的脚本的网址。
 
-## load event
-当模块加载时会发出一个事件,可以在监听事件做相应处理
+## load，reload event
+当模块加载时会发出事件,可以在监听事件做相应处理
 
 	require(['lego'], function (lego) {
   		lego.on('load', function (mod) {
+		})
+		lego.on('reload', function (mod) {
 		})
 	})
 
